@@ -1,0 +1,115 @@
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(60deg,rgb(252, 252, 254),rgba(0, 0, 0, 0.782));
+   background-blend-mode: darken;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    gap:1ch;
+    align-items: center;
+    min-height: 97vh;
+    padding: 1rem;
+}
+.testimonial-card{
+    box-shadow: 0px 0px 2px 0px black;
+    padding: 1.2rem;
+    background-color: rgba(13, 13, 47, 0.896);
+    color: white;
+    border-radius: 0.8ch;
+    width:clamp(10rem,60%,20rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ratings{
+    color: rgb(31, 169, 31);
+    font-size: clamp(0.8rem,50%,1rem);
+    padding: 0.5rem;
+}
+
+.symbol{
+    font-size: clamp(4rem,50%,6rem);
+}
+.symbol i{
+    margin-left: 0.6rem;
+     transform: rotate(180deg);
+     color: rgba(128, 128, 128, 0.559);
+}
+.user-details{
+    font-size: smaller;
+}
+.user-details .user-profession{
+    font-weight: 100;
+    font-size: smaller;
+    color: rgb(211, 211, 211);
+    line-height: 1.8;
+}
+.username{
+font-weight: 500;
+font-size: 1.7ch;
+}
+.testimony{
+    font-size: smaller;
+    font-weight: 100;
+    padding: 1ch;
+    text-align: center;
+}
+hr{
+    margin: 1ch 0;
+}
+.testimonial-card.middle .user-details{
+    text-align: center;
+    line-height: 1.5;
+}
+.user-profile-pic img{
+    width:3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 80%;
+}
+ .testimonial-card.left .user-details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.testimonial-card.middle .user-profile-pic>img{
+ width:5.5rem;
+ height: 5.5rem;
+}
+.testimonial-card.middle .card-footer{
+    padding: 0.5rem;
+}
+.testimonial-card.right{
+ position: relative;
+ padding: 2rem;
+} 
+.testimonial-card.right .user-details,.testimonial-card.middle .card-body,.testimonial-card.right .card-body{
+    text-align: center;
+}
+
+.testimonial-card.right .user-profile-pic{
+    position: absolute;
+    top:-25%;
+    left:49%;
+    transform: translate(-55%);
+}
+.testimonial-card.right .user-profile-pic img{
+   height: 6rem;
+    width: 6rem;
+}
+
+@media (max-width:700px) {
+    .container{
+        flex-direction: column;
+        gap:2rem;
+    }
+    .testimonial-card.right {
+        margin-top: 2rem;
+    }
+    .testimony{
+        text-align: center;
+    }
+}
