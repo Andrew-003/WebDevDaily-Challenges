@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player|WebDevDaily Challenge</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <main class="music-player">
+            <header>
+                <nav class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="nav-item theme">
+                            <i class="fa-solid fa-moon"></i>
+                        </li>
+                        <li class="nav-item notification">
+                            <i class="fa-solid fa-bell"></i>
+                        </li>
+                        <li class="nav-item profile">
+                            <img src="./images/user.jpg" alt="user profile picture"/>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <h2>Currently Playing</h2>
+            <section class="currently-playing-card">
+                    <div class="playing-bar">
+                     <div class="playing-symbol">
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                    </div>
+                    <div class="playing-symbol">
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                    </div>
+                    <div class="playing-symbol">
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                    </div>
+                    <div class="playing-symbol">
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                    </div>
+                      <div class="playing-symbol">
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                    </div>
+                    </div>
+                <div class="now-playing-card">
+                    <div class="card-header">
+                        <img src="./images/cover2.jpg" alt="album theme" class="music-theme">
+                    </div>
+                    <div class="card-body">
+                        <h1>Flowers</h1>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="music-tags">
+                            <li class="tag">
+                                Travis Scott
+                            </li>
+                            <li class="tag">
+                                Best of 2024
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="next-songs">
+                <div class="ns-header">
+                    <div class="ns-hd-left">
+                        <h2>
+                            Next Songs
+                        </h2>
+                    <div class="playing-symbol">
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                       <div class="bar"> </div>
+                    </div>
+                    </div>
+                    <div class="ns-hd-right">
+                       <a href="#" class="view-all">View All</a>
+                    </div>
+                </div>
+                <ul class="songs-list">
+                    <li class="song-card">
+                        <img src="./images/cover1.avif" alt="Dance Alone album cover"/>
+                        <div class="song-details">
+                            <h3 class="song-name">
+                                Dance Alone
+                            </h3>
+                            <p class="artist-and-year">
+                                Kylie Minogue
+                                <time datetime="2024"> &#x2022; 2024</time>
+                            </p>
+                        </div>
+                        <time datetime="PT4M30S">
+                            4:30
+                        </time>
+                    </li>
+                    <li class="song-card">
+                        <img src="./images/cover2.jpg" alt="Flowers album cover"/>
+                        <div class="song-details">
+                            <h3 class="song-name">
+                                Flowers
+                            </h3>
+                            <p class="artist-and-year">
+                                lost.
+                                 <time datetime="2023"> &#x2022; 2023</time>
+                            </p>
+                        </div>
+                        <time datetime="PT4M30S">
+                            3:15
+                        </time>
+                    </li>
+                    <li class="song-card">
+                        <img src="./images/cover3.jpg" alt="Paint The Town Red album cover"/>
+                        <div class="song-details">
+                            <h3 class="song-name">
+                                Paint The Town Red
+                            </h3>
+                            <p class="artist-and-year">
+                                Doja Cat
+                                 <time datetime="2023"> &#x2022; 2023</time>
+                            </p>
+                        </div>
+                        <time datetime="PT4M30S">
+                            5:00
+                        </time>
+                    </li>
+                    <li class="song-card">
+                        <img src="./images/cover4.jpg" alt="Who I Am album cover"/>
+                        <div class="song-details">
+                            <h3 class="song-name">
+                                Who I Am
+                            </h3>
+                            <p class="artist-and-year">
+                                 Alan Walker
+                                 <time datetime="2024"> &#x2022; 2024</time>
+                            </p>
+                        </div>
+                        <time datetime="PT4M30S">
+                            4:10
+                        </time>
+                    </li>
+                    <li class="song-card">
+                        <img src="./images/cover5.jpg" alt="At My Worst album cover"/>
+                        <div class="song-details">
+                            <h3 class="song-name">
+                                At My Worst
+                            </h3>
+                            <p class="artist-and-year">
+                                Timmy Commerford
+                                 <time datetime="2021"> &#x2022; 2021</time>
+                            </p>
+                        </div>
+                        <time datetime="PT4M30S">
+                            3:15
+                        </time>
+                    </li>
+                    <li class="song-card">
+                        <img src="./images/cover6.jpg" alt="Mirrors album cover"/>
+                        <div class="song-details">
+                            <h3 class="song-name">
+                                Mirrors
+                            </h3>
+                            <p class="artist-and-year">
+                                Justin Timberlake
+                                 <time datetime="2013"> &#x2022; 2013</time>
+                            </p>
+                        </div>
+                        <time datetime="PT6M30S">
+                            6:30
+                        </time>
+                    </li>
+                </ul>
+            </section>
+            <section class="now-playing">
+                <div class="music-progress">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
