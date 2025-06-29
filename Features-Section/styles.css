@@ -9,10 +9,10 @@ body{
     color: #333;
     background-color: #f4f4f4;
     padding: 4em;
-   display: flex;
-   flex-direction: column; 
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
     background-color: #0a031f;
 }
 img{
