@@ -1,0 +1,153 @@
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: white;
+    line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.brand a{
+    color: black;
+    text-decoration: none;
+}
+.brand img{
+    width:40%;
+   margin: 0.2em;
+}
+nav{
+    width: 60%;
+}
+header .navlinks{
+ list-style: none;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ gap:1em;
+}
+.navlink a{
+ color: black;
+ text-decoration: none;
+ font-weight: 600;
+ display: inline-block;
+ transition:transform 0.2s ease-in,box-shadow 0.5s ease-out;
+
+}
+.navlink a:hover{
+   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.267);
+   opacity: 0.9;
+    transform: scale(1.1);
+}
+.navlink a:active{
+   color:rgb(99, 97, 43);
+}
+.user{
+   display: flex;
+   justify-content: space-around;
+   gap:1em;
+}
+.user .btn{
+padding: 0.5rem 1rem;
+border-radius: 0.9rem;
+}
+.user .btn:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.232);
+}
+.user .btn.signup{
+    background-color: white;
+    border: 1px solid black;
+}
+.user .btn.signin{
+    background-color: rgb(6, 6, 6);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+.content{
+    display: flex;
+    height: 91vh;
+    width:100%;
+}
+.content-info{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:50%;
+    padding: 10em;
+}
+.content-info .btn-get-started{
+    width: 20rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.7rem;
+    font-weight: bold;
+    border: 1px solid white;
+    font-size: large;
+    box-shadow: 0px 2px 10px 0px rgba(128, 128, 128, 0.444);
+    background: linear-gradient(30deg,rgba(52, 227, 52, 0.34),rgba(82, 82, 207, 0.297),rgba(255, 192, 203, 0.542),rgba(255, 255, 0, 0.434));
+    margin: 25% auto;
+}
+.content-title{
+    font-size: 2rem;
+}
+.btn-get-started:hover,.user .btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(1.04);
+}
+.content-img{
+    flex:1;
+   height:100%;
+    width:50%;
+}
+.content-img img{
+  height: inherit;
+}
+.content-overview{
+    margin-top: 1em;
+    font-size: 1.2rem;
+}
+@media (max-width:700px) {
+    header{
+        flex-direction: column;
+    }
+   
+    
+    .content{
+        flex-direction: column;
+    }
+    .content-info{
+      padding: 6em;
+      width: 100%;
+    }
+    .content-img{
+       margin: auto;
+       width:80%;
+    }
+    .user{
+        flex-direction: column;
+        margin: 1em;
+        width:100%;
+    }
+    .navlinks{
+        font-size: small;
+        margin: 0.5em;
+    }
+    .user .btn{
+        padding:0.5em;
+        margin: 0.2em;
+    }
+    .btn-get-started{
+        max-width: 10rem;
+    }
+
+}
