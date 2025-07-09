@@ -29,7 +29,6 @@ body{
     font-size: clamp(0.8rem,50%,1rem);
     padding: 0.5rem;
 }
-
 .symbol{
     font-size: clamp(4rem,50%,6rem);
 }
