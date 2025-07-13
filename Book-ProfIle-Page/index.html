@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Book Profile Page|WebDevDaily</title>
+</head>
+<body>
+    <main class="container book-profile-page">
+        <section class="user-details">
+            <figure>
+                <button class="back-btn">
+                 <i class="fa-solid fa-circle-arrow-left icon-back"></i>   
+                </button>
+                <img src="./images/bg_img.png" alt="background image">
+                <button class="change-img-btn bg">
+                <i class="fa-solid fa-image icon-image"></i>
+                </button>
+                <figcaption class="user-info">
+                    <img src="./images/user-profile-picture.avif" alt="user-profile-picture">
+                    <h2 class="username">
+                        Gwen Stacy
+                    </h2>
+                    <p class="user-handle">
+                        @GwenStacy31
+                    </p>
+                <button class="change-img-btn avatar">
+                <i class="fa-solid fa-image icon-image"></i>
+                </button>
+                </figcaption>
+            </figure>
+            <button class="edit-profile-details-btn">
+                Edit Profile
+            </button>
+        </section>
+        <section class="user-stats">
+            <h2>Statistics</h2>
+            <ul class="book-stats">
+                <li>
+                    <small class="stat-value">56</small>
+                     <p class="stat-name">Finished</p>
+                </li>
+                 <li>
+                    <small class="stat-value">4</small>
+                     <p class="stat-name">Unfinished</p>
+                </li>
+                <li>
+                    <small class="stat-value">14</small>
+                     <p class="stat-name">Dropped</p>
+                </li>
+            </ul>
+        </section>
+        <section class="recent-books">
+            <div class="book-details book1">
+                <section class="book-data">
+                    <img src="./images/book1.png" alt="book1 cover image" class="book-cover">
+                    <div class="book-info">
+                        <p class="book-title">
+                            The Bookish life of Nina Hill
+                        </p>
+                        <p class="book-author">
+                            By Abbi Waxman
+                        </p>
+                    </div>
+                </section>
+                <section class="book-progress-stats">
+                    <div class="progress-container">
+                        <div class="progress-ring" style="--progress: 50">
+                        <div class="progress-value">50%</div>
+                    </div>
+                    </div>
+                    <p class="progress-stats">
+                        <small>
+                         176/352   
+                        </small>
+                    </p>
+                </section>
+                <section class="book-actions">
+                    <button type="button" class="continue-btn">Continue</button>
+                    <button type="button" class="drop-btn">Drop it</button>
+                </section>
+            </div>
+            <div class="book-details book2">
+                <section class="book-data">
+                    <img src="./images/book2.png" alt="book2 cover image" class="book-cover">
+                    <div class="book-info">
+                        <p class="book-title">
+                            Dont Make me think
+                        </p>
+                        <p class="book-author">
+                            By Steve King
+                        </p>
+                    </div>
+                </section>
+                <section class="book-progress-stats">
+                    <div class="progress-container">
+                        <div class="progress-container">
+                        <div class="progress-ring" style="--progress: 25">
+                        <div class="progress-value">75%</div>
+                    </div>
+                    </div>
+                    <p class="progress-stats">
+                        <small>
+                         150/201   
+                        </small>
+                    </p>       
+                </section>
+                <section class="book-actions">
+                    <button type="button" class="continue-btn">Continue</button>
+                    <button type="button" class="drop-btn">Drop it</button>
+                </section>
+            </div>
+            <div class="book-details book3">
+                <section class="book-data">
+                    <img src="./images/book3.png" alt="book3 cover image" class="book-cover">
+                    <div class="book-info">
+                        <p class="book-title">
+                            The Great Gatsby
+                        </p>
+                        <p class="book-author">
+                            By Scott Fitzgerald
+                        </p>
+                    </div>
+                </section>
+                <section class="book-progress-stats">
+                    <div class="progress-container">
+                        <div class="progress-container">
+                        <div class="progress-ring" style="--progress: 75">
+                        <div class="progress-value">15%</div>
+                    </div>
+                    <p class="progress-stats">
+                        <small>
+                         18/22   
+                        </small>
+                    </p>
+                </section>
+                <section class="book-actions">
+                    <button type="button" class="continue-btn">Continue</button>
+                    <button type="button" class="drop-btn">Drop it</button>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

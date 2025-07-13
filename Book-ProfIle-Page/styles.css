@@ -1,0 +1,230 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h2,p{
+    line-height: 1.2;
+}
+img{
+    display: block;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   font-family: Arial, Helvetica, sans-serif;
+   background: linear-gradient(180deg,white, #c54e26e0);
+}
+.container{
+box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.108);
+width:18rem;
+border-radius: 0.5rem;
+overflow:hidden ;
+background-color: white;
+}
+.user-details{
+    position: relative;
+    text-align: center;
+}
+.back-btn{
+    position: absolute;
+    top:5%;
+    left:5%;
+    background: none;
+    border: none;
+    border-radius: 90%;
+}
+.back-btn:hover,.change-img-btn.bg:hover,.change-img-btn.avatar:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    color: rgb(103, 53, 18);
+    background-color: beige;
+    transform: scale(1.06);
+    transition: transform ease-in 0.2s,color ease-in-out 0.5s;
+}
+.edit-profile-details-btn:hover,.continue-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.06);
+    transition: transform ease-in 0.2s;
+}
+.icon-back{
+    color: rgba(0, 0, 0, 0.177);
+    font-size: 1.5rem;
+}
+.change-img-btn.bg{
+    position: absolute;
+    right: 3%;
+    top:40%;
+    background: rgba(0, 0, 0, 0.177);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 80%;
+    color: white;
+}
+.user-info img{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width:5.5rem;
+    height: 5.5rem;
+    border-radius: 80%;
+    object-fit: cover;
+    border: 0.3rem solid white;
+}
+.change-img-btn.avatar{
+   position: absolute;
+   top:60%;
+   left:55%;
+   background: rgba(0, 0, 0, 0.177);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 80%;
+    color: white;
+}
+.user-info{
+    margin-top: 3em;
+    text-align: center;
+    font-size: small;
+}
+.username{
+    margin: 0.2em;
+}
+.user-handle{
+    color: rgb(73, 72, 72);
+}
+.edit-profile-details-btn{
+   border: none;
+   background-color: rgba(5, 5, 35, 0.882);
+   color: white;
+   padding: 0.5rem 0.8rem;
+   margin: 0.4em;
+   border-radius: 0.2rem;
+   font-size: 0.6rem;
+   font-weight: bold;
+}
+.user-stats{
+    margin: 0.8em;
+}
+.book-stats{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    padding: 0.2em;
+}
+.book-stats p{
+    font-size: small;
+}
+.recent-books{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    align-items: center;
+    height: 100%;
+    gap:1.5em;
+    margin: 1em 1em 0;
+    position: relative;
+    padding: 0.2em;
+}
+.book-cover{
+    border-radius: 70rem;
+}
+.book-data{
+    text-align: center;
+    font-size: smaller;
+    color:rgba(0, 0, 0, 0.768)
+}
+.book-title{
+    font-size: 0.6rem;
+     margin: 0.3em;
+     font-weight: bold;
+}
+.book-author{
+    font-size: 0.5rem;
+    margin: 0.3em;
+}
+.book-progress-stats{
+    text-align: center;
+    position: relative;
+}
+.progress-ring {
+  --progress: 75; 
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: conic-gradient(
+   #c54e26e0 calc(var(--progress) * 1%), 
+    rgba(5, 5, 35, 0.882) 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.progress-ring::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 90%;
+  z-index: 1;
+}
+
+.progress-value {
+  padding: 0.15em;
+  z-index: 2;
+  font-size: 0.1rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+
+.progress-value{
+    position: absolute;
+    top:28%;
+    right:20%;
+    left:20%;
+   font-size: 1.1rem;
+}
+.progress-stats{
+    font-weight: bold;
+}
+.book-actions{
+text-align: center;
+}
+.continue-btn{
+    border: none;
+   background-color: rgba(5, 5, 35, 0.882);
+   color: white;
+   padding: 0.5rem;
+   margin: 0.4em;
+   border-radius: 0.2rem;
+   font-size: 0.6rem;
+   font-weight: bold;
+}
+.drop-btn{
+   border: none;
+   color: rgb(143, 11, 11);
+   background: none;
+   margin: 0.3em;
+   font-weight: bold;
+   font-size: 0.7rem;
+}
+.drop-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: transform ease-in 0.5s,opacity ease-out 0.2s;
+}
+@media (max-width:60rem) {
+    .user-stats{
+    margin: 0.5em;
+}
+}
