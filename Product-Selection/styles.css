@@ -1,0 +1,136 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(270deg,rgba(216, 128, 110, 0.97),rgba(71, 20, 5, 0.866));
+}
+.product-selection-card{
+display: flex;
+margin: 1em;
+border-radius: 0.2rem;
+overflow: hidden;
+box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.492);
+min-width: 40rem;
+background-color: white;
+}
+.product-img-container{
+    flex:1;
+}
+.product-img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.product-info-container{
+    flex:1;
+    padding: 2em;
+}
+.product-details{
+    display: flex;
+    justify-content: space-around;
+    min-height: 100%;
+    flex-direction: column;
+}
+.product-title{
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.product-overview{
+    text-wrap: nowrap;
+}
+.collection-tag,.product-title,.product-overview{
+margin: 0.5em;
+}
+
+.collection-tag{
+    display: inline;
+    width:10rem;
+    text-wrap: nowrap;
+    background-color: yellow;
+    padding: 0.4em;
+    font-weight: bold;
+}
+.product-price,.colors-label{
+    margin: 0.5em;
+}
+.product-price{
+    color:rgba(0, 0, 0, 0.818);
+}
+.product-colors{
+    display: flex;
+    gap:0.5em;
+}
+.color{
+    height: 1.5rem;
+    width:1.5rem;
+    border-radius: 80%;
+    margin: 1em 0;
+    padding: 1em;
+}
+.color:hover{
+ cursor: pointer;
+ opacity: 0.9;
+ transform:scale(1.1);
+}
+.color:active{
+    transform:scale(1.1);
+    border: 1px solid rgba(0, 0, 0, 0.508);
+}
+.color.brown{
+    background-color: brown;
+   
+}
+.color.lightblue{
+    background-color: lightblue;
+}
+.color.yellow{
+background-color: yellow;
+}
+.color.red{
+    background-color: red;
+}
+
+
+button{
+    padding: 1em;
+    background: none;
+    border:none;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+}
+.btn-add-to-bag{
+ background-color: black;
+ color: white;
+}
+
+.btn-add-to-wishlist{
+    border: 1px solid rgba(0, 0, 0, 0.614);
+}
+.btn-add-to-wishlist:hover,.btn-add-to-bag:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: rgb(211, 135, 35);
+    color:white;
+    transform: scaleY(1.1);
+    border: none;
+}
+@media (max-width:60rem) {
+    .product-selection-card{
+        flex-direction: column;
+        transition: ease-in-out 0.2s;
+        min-width: 10rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap:1em;
+    }
+   
+}
