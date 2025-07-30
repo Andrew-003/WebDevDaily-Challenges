@@ -1,0 +1,142 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg,rgba(223, 200, 200, 0.921),rgba(212, 110, 127, 0.8));
+}
+p,h1,span{
+    line-height: 1.2;
+    word-wrap: pre;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.crypto-blog-card{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 1px 0px black;
+    padding: 2.5em 1em;
+    margin: 1em;
+    border-radius: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.652);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20rem;
+}
+.card-logo{
+    width:20%;
+}
+.card-overview{
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1em;
+}
+.highlight-text{
+    font-weight: 100;
+    color:rgb(46, 196, 234)
+}
+.card-title{
+ font-size: 2rem;
+}
+.card-body{
+font-weight: lighter;
+font-size: smaller;
+
+}
+.card-footer-btn{
+    padding: 1.2em 1.2em;
+    color: white;
+    background-color: rgba(219, 18, 226, 0.871);
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.6rem;
+}
+.card-footer-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s,transform 0.3s;
+}
+.card-footer-btn:active{
+     transform: scale(1);
+     transition: ease-in-out 0.3s,transform 0.3s;
+     background-color: rgba(79, 7, 82, 0.871);
+}
+.news-articles{
+    flex:2;
+    display: flex;
+    justify-content: center;
+    gap:1em;
+    height: 100px;
+    height: 100%;
+    width: 100%;
+    padding:0 0 0 1em;
+}
+.article-card{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    flex:3;
+}
+.article1-thumbnail img,.article2-thumbnail img{
+    height: 8.5rem;
+    width:12rem;
+    border-radius: 1rem;
+}
+.article-card time{
+    color: rgb(203, 199, 199);
+    font-size: small;
+    padding: 1em 0.1em;
+}
+.article-title{
+    font-size: 0.9rem;
+    text-wrap: nowrap;
+    font-weight: 700;
+}
+.article-card:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s,transform 0.3s;
+    background-color: rgba(0, 0, 0, 0.229);
+    padding: 0.8em 0.4em;
+    border-radius: 0.8rem;
+}
+.article-card:active{
+     background-color: rgba(93, 93, 93, 0.229);
+         transform: scale(1);
+     transition: ease 0.8s,background-color 0.8s,transform 0.8s;
+}
+
+ @media (max-width:60rem) {
+    .crypto-blog-card{
+        flex-direction: column;
+        height: 50rem;
+        gap:1.5em
+    }
+
+    .card-overview{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .card-logo{
+    text-align: center;
+}
+    .news-articles{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+    .article-card:hover{
+    padding: 0.5em 0.8em;
+}
+} 
