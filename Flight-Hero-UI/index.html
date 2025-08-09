@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Hero UI|WebDevDaily Challenge</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="./images/logo.png" alt="Flights-page-logo" class="logo">
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="#Flight-Rates" class="nav-link"> Flight Rates</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="#Check-Schedules" class="nav-link"> Check Schedules</a>
+                    </li>
+                    <li class="nav-item">
+                         <a href="#Membership-Plans" class="nav-link">Membership Plans</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="contact-btn">
+                Contact Us
+            </button>
+        </header>
+        <main class="hero-section">
+            <section class="hero-info">
+            <h1 class="hero-title">
+                Find Cheap Flights On a Click
+            </h1>
+            <p class="hero-overview">
+                Book in Advance and Get Membership Card to Save Some points<br/>
+                which can be used for future purposes.
+            </p>
+            </section>
+            <div class="form-container">
+            <form action="#" class="hero-form">
+                 <select class="options-menu flight-destination-locations">
+                <option value="" disabled selected hidden>Select Location</option>
+                <option value="10">America</option>
+                <option value="20">Barcelona</option>
+                <option value="50">China</option>
+                <option value="60">Finland</option>
+                </select>
+                <select class="options-menu flight-type" aria-placeholder="Fight Type">  
+                <option value="" disabled selected hidden>Select Type</option>
+                <option value="1">Express Airlines</option>
+                <option value="2">American Express</option>
+                <option value="3">Nissan Takeoffs</option>
+                <option value="4">Emarites</option>
+                </select>
+                <button type="button" class="check-flights-btn">
+                    Check Flights
+                </button>
+            </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

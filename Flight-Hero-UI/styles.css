@@ -1,0 +1,153 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,p{
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+body{
+    background:url('./images/background-image.png');
+    background-size:initial;
+    background-position: center;
+    font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:25rem;
+    height: 97vh;
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    background-color: rgba(105, 194, 208, 0.948);
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap:1em;
+}
+.nav-item a{
+    color:rgb(60, 18, 116);
+    text-decoration: none;
+}
+.nav-item:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    
+}
+.nav-item:active{
+    transform: scale(1.0);
+    color: azure;
+   text-shadow: 1px 10px 10px rgba(255, 255, 255, 0.948);
+    transition: transform 0.3s ease-in-out text-shadow 0.4s ease-in-out;
+}
+.contact-btn{
+    padding: 1em;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+}
+.contact-btn:hover{
+    transform: scale(1.1);
+    color: white;
+    border-color: white;
+    transition: transform 0.3s ease-in-out;
+    transition: color 0.2s ease-in;
+    transition: border-color 0.2s ease-in;
+}
+.contact-btn:active{
+    opacity: 0.8;
+    transform: scale(1);
+}
+.hero-section{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+.hero-title{
+    font-size: 2.5rem;
+    padding: 0.2em;
+}
+.hero-overview{
+    padding: 0.5em;
+    color: hsl(0, 74%, 93%);
+}
+.form-container{
+   text-align: center;
+  background-color: rgba(227, 242, 237, 0.526);
+  padding: 1.5rem;
+  border-radius: 10rem;
+ 
+  margin: 0 auto;
+}
+.options-menu,.check-flights-btn{
+    padding: 1.5em;
+    text-align: center;
+    border-radius: 10rem;
+    border: none;
+    margin: 0.2em;
+}
+.options-menu{
+    -webkit-appearance: none; /* Removes default arrow on Safari/Chrome */
+    -moz-appearance: none;    /* Removes default arrow on Firefox */
+    appearance: none;         /* General reset */
+    outline: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14l-4.796-5.481c-.566-.647-.106-1.659.753-1.659h9.592c.86 0 1.32 1.012.753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1.5em center; /* Move arrow inward */
+    background-size: 1em;
+    cursor: pointer;
+    padding-right: 5em;
+     font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.options-menu:hover{
+  background-color:  rgba(195, 216, 209, 0.755);
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.check-flights-btn{
+    background-color: rgb(4, 253, 195);
+}
+.check-flights-btn:hover{
+    transform: scale(1.1);
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+.check-flights-btn:active{
+    transform: scale(1.0);
+    color: white;
+    border-color: white;
+    transition: transform 0.3s ease-in-out;
+   background-color:  rgb(5, 148, 114);
+}
+option{
+    border: none;
+}
+
+option:hover,button:hover{
+     cursor: pointer;
+}
+@media (max-width:60rem) {
+    body{
+        background-size:cover;
+        background-origin: content-box;
+        background-repeat: repeat-y;
+    }
+    .hero-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.form-container{
+    padding: 1em;
+}
+
+}
